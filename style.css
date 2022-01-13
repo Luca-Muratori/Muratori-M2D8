@@ -1,25 +1,47 @@
-   img {
-        overflow: hidden;
-        vertical-align: middle;
-        width: 200px;
-        height: 300px;
-        object-fit:cover;
-      }
-     
-      .albumTitle {
-        font-size: 20px;
-        color: red;
-      }
+img {
+    overflow: hidden;
+    vertical-align: middle;
+    width: 200px;
+    height: 300px;
+    object-fit:cover;
+}
 
-      .albumGroup {
-        font-size: 10px;
-        color: blue;
-      }
+.albumTitle {
+font-size: 20px;
+color: red;
+}
 
-      .albumGenre {
-        font-size: 10px;
-      }
+.albumGroup {
+font-size: 10px;
+color: blue;
+}
 
-      .albumDuration {
-        font-size: 10px;
-      }
+.albumGenre {
+font-size: 10px;
+}
+
+.albumDuration {
+font-size: 10px;
+}
+
+.jumbotron{
+    animation-duration: 5s;
+    animation-name: fade-in;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
