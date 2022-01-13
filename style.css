@@ -1,0 +1,25 @@
+   img {
+        overflow: hidden;
+        vertical-align: middle;
+        width: 200px;
+        height: 300px;
+        object-fit:cover;
+      }
+     
+      .albumTitle {
+        font-size: 20px;
+        color: red;
+      }
+
+      .albumGroup {
+        font-size: 10px;
+        color: blue;
+      }
+
+      .albumGenre {
+        font-size: 10px;
+      }
+
+      .albumDuration {
+        font-size: 10px;
+      }
