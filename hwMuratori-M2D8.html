@@ -86,6 +86,7 @@ Make sure you check the documentation before creting anything custom.
                 <th scope="col">#</th>
                 <th scope="col">title</th>
                 <th scope="col">duration</th>
+                <th scope='col'></th>
             </tr>
         </thead>
         <tbody>
@@ -93,34 +94,40 @@ Make sure you check the documentation before creting anything custom.
                 <th scope="row">1</th>
                 <td>Re-Hash</td>
                 <td>3:38</td>
+                <td><button type="button" class="btn btn-primary buttonDelete">delete</button> </td>
+
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>5/4</td>
                 <td>2:40</td>
+                <td><button type="button" class="btn btn-primary buttonDelete">delete</button> </td>
+
             </tr>
             <tr>
                 <th scope="row">3</th>
                 <td>Tomorrow Comes Today</td>
                 <td>3:00</td>
+                <td><button type="button" class="btn btn-primary buttonDelete">delete</button> </td>
 
             </tr>
             <tr>
                 <th scope="row">4</th>
                 <td>New Genious (Brother)</td>
                 <td>4:00</td>
-
+                <td><button type="button" class="btn btn-primary buttonDelete">delete</button> </td>
             </tr>
             <tr>
                 <th scope="row">5</th>
                 <td>Clint Eastwood</td>
                 <td>3:00</td>
+                <td><button type="button" class="btn btn-primary buttonDelete">delete</button> </td>
+
 
             </tr>
 
         </tbody>
     </table>
-
     <!--create the cards-->
     <div class="container">
         <div class="row">
@@ -393,6 +400,16 @@ Make sure you check the documentation before creting anything custom.
         Considering the button you've created in ex. 5 that deletes the row:
         Add a fade-out effect to the row before it gets removed, using a CSS transition effect
     -->
+    <script>
+        const deleteFunction = function () {
+            const btn = document.querySelectorAll("table > tbody > tr > td > .btn.btn-primary")
+            btn.addEventListener('click', function () {
+                const track = document.querySelector("tr")
+                track.remove()
+            })
+        }
+        deleteFunction()
+    </script>
 </body>
 
 </html>
